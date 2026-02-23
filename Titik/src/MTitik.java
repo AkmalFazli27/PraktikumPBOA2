@@ -12,5 +12,11 @@ public class MTitik {
         T1.printTitik(); // Mencetak koordinat T1 ke layar
         T1.geser(3,4); // Menggeser T1 sejauh (3,4)
         T1.printTitik(); // Mencetak koordinat T1 ke layar
+        
+        Titik T2 = T1;
+        T2.printTitik();
+        T1.setAbsis(10);
+        T1.setOrdinat(10);
+        T2.printTitik();
     }
 }

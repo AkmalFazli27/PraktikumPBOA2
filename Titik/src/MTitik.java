@@ -19,10 +19,10 @@ public class MTitik {
         T1.setOrdinat(10);
         T2.printTitik();
 
-        Titik T3 = new Titik();
-        Titik T4 = new Titik();
+        // Titik T3 = new Titik();
+        // Titik T4 = new Titik();
 
         System.out.println("Jumlah objek Titik = " + Titik.getCounterTitik());
-        System.out.println("Jumlah objek Titik = " + T3.getCounterTitik());
+        // System.out.println("Jumlah objek Titik = " + T3.getCounterTitik());
     }
 }

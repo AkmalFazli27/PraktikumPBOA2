@@ -65,4 +65,19 @@ public class Titik {
     static int getCounterTitik() {
         return counterTitik;
     }
+
+    int getKuadran() {
+        if (absis > 0 && ordinat > 0) {
+            return 1;
+        }
+        else if (absis < 0 && ordinat > 0) {
+            return 2;
+        }
+        else if (absis < 0 && ordinat < 0) {
+            return 3;
+        }
+        else {
+            return 4;
+        }
+    }
 } // end class Titik 

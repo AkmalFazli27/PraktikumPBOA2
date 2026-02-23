@@ -18,6 +18,18 @@ public class Titik {
         counterTitik++;
     }
 
+    // konstruktor untuk membuat titik dengan nilai absis dan ordinat tertentu
+    Titik(double absis, double ordinat) {
+        this.absis = absis;
+        this.ordinat = ordinat;
+        counterTitik++;
+    }
+
+    // konstruktor untuk membuat titik (0,0)
+    // Titik() {
+    //     this(0,0);
+    // }
+
     // mengembalikan nilai absis
     double getAbsis() {
         return absis;

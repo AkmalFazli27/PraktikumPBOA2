@@ -66,6 +66,7 @@ public class Titik {
         return counterTitik;
     }
 
+    // mengembalikan nilai kuadran pada titik
     int getKuadran() {
         if (absis > 0 && ordinat > 0) {
             return 1;
@@ -76,8 +77,23 @@ public class Titik {
         else if (absis < 0 && ordinat < 0) {
             return 3;
         }
+        else if (absis == 0 && ordinat == 0) {
+            return 0;
+        }
         else {
             return 4;
         }
     }
-} // end class Titik 
+    
+    // mengembalikan jarak titik ke pusat
+    double getJarakPusat() {
+        return Math.sqrt(Math.pow(absis,2) + Math.pow(ordinat,2));
+    }
+
+    double getJarak(Titik T) {
+        double selisihAbsis = this.absis - T.absis;
+        double selisihOrdinat = this.ordinat - T.ordinat;
+        
+        return Math.sqrt((selisihAbsis * selisihAbsis) + (selisihOrdinat * selisihOrdinat));
+    }
+} // end class Titik double getJarakPusat() {

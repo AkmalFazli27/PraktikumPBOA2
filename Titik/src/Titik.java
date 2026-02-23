@@ -8,12 +8,14 @@ public class Titik {
     /* ATRIBUT */
     double absis;
     double ordinat;
+    static int counterTitik = 0;
 
     /* METHOD */
     // konstruktor untuk membuat titik (0,0)
     Titik() {
         absis = 0;
         ordinat = 0;
+        counterTitik++;
     }
 
     // mengembalikan nilai absis
@@ -45,5 +47,10 @@ public class Titik {
     // mencetak koordinat titik
     void printTitik() {
         System.out.println("Titik (" + absis + "," + ordinat + ")");
+    }
+
+    // mengembalikan nilai counterTitik
+    static int getCounterTitik() {
+        return counterTitik;
     }
 } // end class Titik 

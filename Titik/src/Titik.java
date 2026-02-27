@@ -90,10 +90,31 @@ public class Titik {
         return Math.sqrt(Math.pow(absis,2) + Math.pow(ordinat,2));
     }
 
+    // mengembalikan jarak titik ke titik lainnya
     double getJarak(Titik T) {
         double selisihAbsis = this.absis - T.absis;
         double selisihOrdinat = this.ordinat - T.ordinat;
         
         return Math.sqrt((selisihAbsis * selisihAbsis) + (selisihOrdinat * selisihOrdinat));
     }
-} // end class Titik double getJarakPusat() {
+
+    // merefleksikan titik pada sumbu X
+    void refleksiX() {
+        ordinat = -ordinat;
+    }
+    
+    // merefleksikan titik pada sumbu Y
+    void refleksiY() {
+        absis = -absis;
+    }
+    
+    // membuat titik baru dengan merefleksikan titik pada sumbu X
+    Titik getRefleksiX() {
+        return new Titik(absis, -ordinat);
+    }
+    
+    // membuat titik baru dengan merefleksikan titik pada sumbu Y
+    Titik getRefleksiY() {
+        return new Titik(-absis, ordinat);
+    }
+} // end class Titik

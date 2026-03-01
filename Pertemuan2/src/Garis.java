@@ -78,8 +78,8 @@ public class Garis {
 
     // menampilkan titik awal dan titik akhir garis
     public void printGaris() {
-        System.out.println(getTitikAwal());
-        System.out.println(getTitikAkhir());
+        getTitikAwal().printTitik();
+        getTitikAkhir().printTitik();
     }
 
     // menampilkan persamaan garis
